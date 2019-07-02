@@ -168,33 +168,6 @@ begin
 :new.b_no:=b_sequence.NEXTVAL;
 end;
 
-CREATE OR REPLACE PROCEDURE PATIENT_PROC
-(
-	first_name IN  varchar2 ,
-	last_name  IN varchar2 ,
-	house_no IN varchar2,
-	street IN varchar2,
-	city IN varchar2,
-	sex IN char
-	)
-as
-
-begin
-
-INSERT INTO Patient ( first_name,
-last_name,
-house_no,
-street,
-city,
-sex 
-) VALUES (first_name,
-last_name,
-house_no ,
-street,
-city,
-sex);
-end;
-
 
 
 
