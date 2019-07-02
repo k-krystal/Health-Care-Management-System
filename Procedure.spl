@@ -5,7 +5,8 @@ CREATE OR REPLACE PROCEDURE PATIENT_PROC
 	house_no IN varchar2,
 	street IN varchar2,
 	city IN varchar2,
-	sex IN char
+	sex IN char,
+	age in number
 	)
 as
 
@@ -16,11 +17,13 @@ last_name,
 house_no,
 street,
 city,
-sex 
+sex,
+age
 ) VALUES (first_name,
 last_name,
 house_no ,
 street,
 city,
-sex);
+sex,
+age);
 end;
